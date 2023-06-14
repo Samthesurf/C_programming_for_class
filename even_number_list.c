@@ -2,8 +2,10 @@
 
 int main(void) {
     int even_num[51], i,n = 0, m =0;
+    float z;
     for (i = 1;i<=100;++i){
-        if (i % 2 == 0){ 
+        z = i / 2;
+        if (z - (int) z == 0){ 
             even_num[n] = i;
             n = n+1;
         }
