@@ -5,13 +5,13 @@ int main () {
     char course_code[20];
 	double cgpa;
     printf("What's the number of courses? ");
-    scanf("%d",&n);
+    scanf_s("%d",&n);
     int  score[n], course_unit[n];
     for(i = 1; i<=n; i++){
     printf("what's the course code\t");
-    scanf("%s",course_code);
+    scanf_s("%s",course_code);
     printf("What is their score? ");
-    scanf("%d",&score[i]);
+    scanf_s("%d",&score[i]);
     if (score[i] >=70 && score[i] <=100){
         grade_score = 5;
     } else if (score[i] >=60 && score[i] <=69){
@@ -24,7 +24,7 @@ int main () {
         grade_score = 0;
     }
     printf("What is the course unit? ");
-    scanf("%d",&course_unit[i]);
+    scanf_s("%d",&course_unit[i]);
      overall_score = grade_score * course_unit[i];
         sum +=overall_score;
         course_unit_sum +=course_unit[i];
